@@ -1,0 +1,119 @@
+.navbar {
+  background: white;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  top: 1rem;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+
+.meno {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  color: black;
+}
+.name_text {
+  color: black;
+  font-weight: 600;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links a {
+  margin: 0 1rem;
+  transition: all 0.5s 0s ease-in-out;
+  text-decoration: none;
+}
+.links a:hover {
+  color: orangered;
+}
+.navigation {
+  color: black;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 18px;
+}
+.navbar_smallScreen {
+  display: none;
+}
+.navbar_smallScreen_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 5;
+}
+.open_menu {
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+.navbar_smallScreen_links .menu_close {
+  font-size: 27px;
+  cursor: pointer;
+  position: absolute;
+  top: 43px;
+  left: 43px;
+  z-index: 10;
+}
+.slide_bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.navbar_smallLinks_text {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.navbar_smallLinks_text a {
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  /* font-family: var(--font-base); */
+  transition: all 0.5s 0s ease-in-out;
+  text-decoration: none;
+}
+.navbar_smallLinks_text a:hover {
+  color: orangered;
+}
+@media screen and (max-width: 1150px) {
+  .navbar {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .navbar_smallScreen {
+    display: flex;
+  }
+  .navbar {
+    top: 0;
+    width: 100%;
+    background: transparent;
+    background-color: transparent;
+  }
+  .name,
+  .links {
+    display: none;
+  }
+}
