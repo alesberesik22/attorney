@@ -44,7 +44,7 @@ function Header() {
             <AiOutlineArrowDown
               fontSize={30}
               className="arrow_down"
-              href="/#about"
+              href="/#experience"
             />
           </div>
           <div className="header_info_image_arrow_down"></div>

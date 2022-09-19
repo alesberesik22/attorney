@@ -1,0 +1,59 @@
+.intro {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.intro_name {
+  color: #c38d7c;
+  font-size: 3em;
+  line-height: 1em;
+  font-family: "Playfair Display", serif;
+}
+.intro_small {
+  margin-top: 2em;
+}
+.intro_small span {
+  color: black;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-family: "Playfair Display", serif;
+}
+.intro_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  width: 10rem;
+  height: 3rem;
+  transition: all 0.5s 0s ease-in-out;
+}
+.intro_button_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid orangered;
+  color: orangered;
+  border-radius: 200px;
+  font-size: 1em;
+  letter-spacing: 0.7px;
+  line-height: 1.6em;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+  transition: all 0.5s 0s ease-in-out;
+  text-decoration: none;
+}
+.intro_button_text:hover {
+  color: black;
+  border: 2px solid black;
+}
+.intro_logo img {
+  color: #c38d7c;
+  width: 3.5rem;
+}

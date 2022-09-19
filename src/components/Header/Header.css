@@ -35,8 +35,8 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  width: 10rem;
-  height: 3rem;
+  width: 12rem;
+  height: 4rem;
   border-radius: 0.3rem;
   color: white;
   border: 1px solid orangered;
@@ -141,7 +141,7 @@
   padding: 2rem 2rem;
   background-color: black;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-  border: 1px solid orangered;
+  border: 1px solid grey;
   z-index: 3;
 }
 .projects_completed,

@@ -1,14 +1,19 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
+import Intro from "./components/Intro/Intro";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Header />
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Intro />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

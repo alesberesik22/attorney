@@ -17,7 +17,7 @@ function Navbar() {
         <a href="#about" className="navigation">
           <p>About</p>
         </a>
-        <a href="#experiences" className="navigation">
+        <a href="#experience" className="navigation">
           <p>Experiences</p>
         </a>
         <a href="#testimonial" className="navigation">
@@ -52,7 +52,7 @@ function Navbar() {
                 <a href="#about">About</a>
               </li>
               <li className="navbar_smallLinks_text">
-                <a href="#experiences">Experiences</a>
+                <a href="#experience">Experiences</a>
               </li>
               <li className="navbar_smallLinks_text">
                 <a href="#testimonial">Testimonial</a>
