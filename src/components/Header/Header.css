@@ -1,14 +1,17 @@
 .header {
   background: url("../assets/images/background.svg");
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 4rem 6rem;
   position: relative;
+  height: 100vh;
+  padding-bottom: 0;
 }
 .header_h1 {
-  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +27,7 @@
     "Lucida Sans", Arial, sans-serif;
 }
 .header_button {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
   margin-top: 2rem;
 }
 .header_button_text {
@@ -58,4 +62,108 @@
 }
 .button_arrow svg {
   font-size: 15px;
+}
+.header_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2rem;
+  width: 100%;
+}
+.header_info_image{
+  width: 33%;
+  height: 25rem;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+.header_info_image_background {
+  position: relative;
+  margin-top: 5rem;
+  width: 21rem;
+  height: 22rem;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(118, 118, 119, 1) 100%);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+.justitia {
+  position: absolute;
+  height: 27rem;
+  bottom: 0;
+  left: -35px;
+  z-index: 2;
+}
+.arrow_down {
+  position: absolute;
+  color: orangered;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s 0s ease-in-out;
+  border-radius: 50%;
+  z-index: 3;
+  bottom: 0;
+  left: 47%;
+}
+.arrow_down:hover{
+  background-color: white;
+  scale: 1.03;
+}
+.header_overlay {
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  width: 100%;
+  height: 11rem;
+  z-index: 1;
+}
+.header_info_stats {
+  width: 33%;
+}
+.header_info_text {
+  height: 100%;
+  width: 33%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 0;
+  margin-top: 0.5rem;
+}
+.hammer_img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 3rem;
+}
+.hammer_img img {
+  height: 2.5rem;
+  margin-right: 5rem;
+}
+.quote_div {
+  color: orangered;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+.quote_div svg {
+  font-size: 25px;
+}
+.info_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.info_text p {
+  font-weight: 800;
 }
