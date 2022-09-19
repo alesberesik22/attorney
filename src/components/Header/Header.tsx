@@ -21,7 +21,11 @@ function Header() {
       </div>
       <div className="header_info">
         <div className="header_info_stats">
-          <div className=""></div>
+          <div className="projects_completed"></div>
+          <div className="break"/>
+          <div className="awards_gain"></div>
+          <div className="break"/>
+          <div className="branches"></div>
         </div>
         <div className="header_info_image">
           <div className="header_info_image_background">
