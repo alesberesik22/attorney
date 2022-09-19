@@ -71,7 +71,7 @@
   margin-top: 2rem;
   width: 100%;
 }
-.header_info_image{
+.header_info_image {
   width: 33%;
   height: 25rem;
   bottom: 0;
@@ -85,7 +85,11 @@
   height: 22rem;
   bottom: 0;
   background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(118, 118, 119, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(118, 118, 119, 1) 100%
+  );
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   z-index: 2;
@@ -109,8 +113,9 @@
   z-index: 3;
   bottom: 0;
   left: 47%;
+  cursor: pointer;
 }
-.arrow_down:hover{
+.arrow_down:hover {
   background-color: white;
   scale: 1.03;
 }
@@ -128,8 +133,55 @@
   height: 140%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
+}
+.info {
+  width: 45%;
+  padding: 2rem 2rem;
+  background-color: black;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid orangered;
+  z-index: 3;
+}
+.projects_completed,
+.awards_gain,
+.branches {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 3;
+}
+.projects_completed h3,
+.awards_gain h3,
+.branches h3 {
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+.break {
+  height: 2px;
+  width: 150px;
+  border-top: 1px solid orangered;
+  color: orangered;
+}
+.projects_completed h4,
+.awards_gain h4,
+.branches h4 {
+  font-size: 17px;
+  font-weight: 300;
+  color: grey;
+}
+.awards_gain h3,
+.branches h3 {
+  margin-top: 2rem;
+}
+.projects_completed h4,
+.awards_gain h4 {
+  margin-bottom: 2rem;
 }
 .header_info_text {
   height: 100%;
@@ -140,7 +192,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   margin-right: 0;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
 }
 .hammer_img {
   display: flex;
@@ -150,7 +202,7 @@
 }
 .hammer_img img {
   height: 2.5rem;
-  margin-right: 5rem;
+  margin-right: 10rem;
 }
 .quote_div {
   color: orangered;
@@ -164,11 +216,17 @@
 }
 .info_text {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   width: 100%;
 }
 .info_text p {
   font-weight: 800;
+  margin-left: 5rem;
+}
+@media screen and (max-width: 650px) {
+  .header_info {
+    flex-direction: column;
+  }
 }
