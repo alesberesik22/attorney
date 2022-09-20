@@ -17,11 +17,13 @@
   line-height: 83.2px;
   font-weight: 500;
   color: orangered;
+  font-family: "Playfair Display", serif;
 }
 .experience_text h3 {
   font-weight: 300;
   letter-spacing: 0.04em;
   color: grey;
+  font-family: "Playfair Display", serif;
 }
 .experiences {
   padding: 4rem 6rem;
@@ -60,6 +62,7 @@
   font-size: 18px;
   margin-top: 0.5rem;
   color: black;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   font-weight: 300;
+  font-family: "Playfair Display", serif;
 }

@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import React from "react";
+import About from "../About/About";
 import Experience from "../Experience/Experience";
 import Header from "../Header/Header";
 import Navbar from "../Navbar/Navbar";
+import VideoPage from "../VideoPage/VideoPage";
 
 function Home() {
   return (
@@ -14,6 +16,8 @@ function Home() {
       <Navbar />
       <Header />
       <Experience />
+      <VideoPage />
+      <About />
     </motion.div>
   );
 }

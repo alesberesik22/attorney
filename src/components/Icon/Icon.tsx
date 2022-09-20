@@ -21,8 +21,7 @@ function LoadingIcon(props: any) {
         initial={{ pathLength: 0 }}
         animate={{ opacity: 1, pathLength: 1 }}
         transition={{ duration: 4, ease: "easeInOut" }}
-        onAnimationEnd={() => console.log(true)}
-        
+        onAnimationComplete={() => props.closeAnimation(true)}
       ></motion.path>
     </motion.svg>
   );

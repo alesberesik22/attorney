@@ -3,17 +3,19 @@ import "./App.css";
 import Intro from "./components/Intro/Intro";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
-import LoadingIcon from "./components/Icon/Icon";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Intro />} />
-          <Route path="/home" element={<Home />} />
-        </Routes>
-      </Router>
+      <AnimatePresence exitBeforeEnter>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Intro />} />
+            <Route path="/home" element={<Home />} />
+          </Routes>
+        </Router>
+      </AnimatePresence>
     </>
   );
 }

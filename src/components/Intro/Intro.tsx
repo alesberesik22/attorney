@@ -9,10 +9,11 @@ function Intro() {
   const [openIntro, setOpenIntro] = useState(false);
   return (
     <div className="intro">
-      <LoadingIcon closeAnimation={setOpenIntro} />
-      {openIntro && (
+      {openIntro ? (
         <>
-          <video
+          <motion.video
+            whileInView={{ opacity: [0, 1] }}
+            transition={{ duration: 0.5 }}
             loop
             autoPlay
             muted
@@ -27,7 +28,7 @@ function Intro() {
             }}
           >
             <source src={video} type="video/mp4" />
-          </video>
+          </motion.video>
           <motion.div
             initial={{ y: -200, opacity: 0 }}
             animate={{ y: 1, opacity: 1 }}
@@ -63,6 +64,8 @@ function Intro() {
             </a>
           </motion.div>
         </>
+      ) : (
+        <LoadingIcon closeAnimation={setOpenIntro} />
       )}
     </div>
   );

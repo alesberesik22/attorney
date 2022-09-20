@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 function Experience() {
   return (
-    <div className="experience" id="experience">
+    <div className="experience" id="areas">
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -22,7 +22,7 @@ function Experience() {
       <div className="experiences">
         <motion.div
           whileInView={{ opacity: [0, 1] }}
-          transition={{ duration: 1, delay: 1.5 }}
+          transition={{ duration: 1, delay: 1 }}
           className="experiences_cards"
         >
           <ExperienceCard

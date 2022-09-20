@@ -14,11 +14,11 @@ function Navbar() {
         <a href="#" className="navigation">
           <p>Home</p>
         </a>
+        <a href="#areas" className="navigation">
+          <p>Areas</p>
+        </a>
         <a href="#about" className="navigation">
           <p>About</p>
-        </a>
-        <a href="#experience" className="navigation">
-          <p>Experiences</p>
         </a>
         <a href="#testimonial" className="navigation">
           <p>Testimonial</p>
@@ -49,10 +49,10 @@ function Navbar() {
                 <a href="#">Home</a>
               </li>
               <li className="navbar_smallLinks_text">
-                <a href="#about">About</a>
+                <a href="#areas">Areas</a>
               </li>
               <li className="navbar_smallLinks_text">
-                <a href="#experience">Experiences</a>
+                <a href="#about">About</a>
               </li>
               <li className="navbar_smallLinks_text">
                 <a href="#testimonial">Testimonial</a>
