@@ -1,18 +1,37 @@
-import React from "react";
+import React, {useState} from "react";
 import { motion } from "framer-motion";
 import law from "../assets/images/law.svg";
+import video from '../assets/video/video.mp4'
 import "./Intro.css";
+import LoadingIcon from "../Icon/Icon";
 
 function Intro() {
+  const [openIntro, setOpenIntro] = useState(false);
   return (
     <div className="intro">
+      <LoadingIcon closeAnimation={setOpenIntro} />
+      <video
+          loop
+          autoPlay
+          muted
+          style={{
+            objectFit: "cover",
+            position: "fixed",
+            width: "100%",
+            height: "100%",
+            top: 0,
+            left: 0,
+            zIndex: -1,
+          }}> 
+        <source src={video} type="video/mp4"/>
+      </video>
       <motion.div
         initial={{ y: -200, opacity: 0 }}
         animate={{ y: 1, opacity: 1 }}
         transition={{ duration: 5 }}
         className="intro_logo"
       >
-        <img src={law} alt="law" />
+        <img src={law} alt="law"/>
       </motion.div>
       <motion.h2
         initial={{ opacity: 0 }}
