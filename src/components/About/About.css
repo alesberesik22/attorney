@@ -11,6 +11,7 @@
   font-weight: 500;
   color: orangered;
   font-family: "Playfair Display", serif;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 .about_first,
 .about_second {
@@ -58,6 +59,7 @@
   color: black;
   letter-spacing: 0.04em;
   font-size: 25px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
 }
 .about_first_image,
 .about_second_image {

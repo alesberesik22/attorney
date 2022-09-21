@@ -1,0 +1,108 @@
+.contact_container {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 70%;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 1);
+
+  .contact_info {
+    background-color: #e4e4e4;
+    border-radius: 12px;
+    flex: 0 1 40%;
+    padding: 20px;
+    color: white;
+    flex-direction: column;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    h4 {
+      font-size: 2rem;
+      font-weight: 500;
+      color: orangered;
+      font-family: "Playfair Display", serif;
+      letter-spacing: 0.03em;
+      margin: 1rem 0 2rem 0;
+    }
+    .contact_opening {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 0;
+      margin-bottom: 2rem;
+      :hover {
+        scale: 1.05;
+      }
+      p {
+        font-size: 0.9rem;
+        color: grey;
+        margin: 0;
+        font-weight: 300;
+        transition: all 0.5s 0s ease-in-out;
+        margin-bottom: 0.5rem;
+        font-family: "Playfair Display", serif;
+        span {
+          color: #c38d7c;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .icons {
+    margin-bottom: 6rem;
+    .icon_text {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      transition: all 0.5s 0s ease-in-out;
+      margin-bottom: 1rem;
+      :hover {
+        scale: 1.05;
+      }
+      .icon {
+        flex: 0 0 20px;
+        font-size: 1.8rem;
+        margin-right: 2rem;
+        color: grey;
+        transition: all 0.5s 0s ease-in-out;
+      }
+      span {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: #c38d7c;
+        transition: all 0.5s 0s ease-in-out;
+        letter-spacing: 0.03em;
+      }
+    }
+  }
+  .social_media {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    .icon_circle {
+      flex: 0 1 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      border-radius: 50%;
+      background: white;
+      transition: all 0.5s 0s ease-in-out;
+      &:hover {
+        scale: 1.06;
+        color: orangered;
+        border: 1px solid orangered;
+      }
+    }
+    .social_icon {
+      color: grey;
+      transition: all 0.5s 0s ease-in-out;
+      &:hover {
+        scale: 1.06;
+        color: orangered;
+      }
+    }
+  }
+}

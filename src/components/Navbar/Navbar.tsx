@@ -23,6 +23,9 @@ function Navbar() {
         <a href="#testimonial" className="navigation">
           <p>Testimonial</p>
         </a>
+        <a href="#contact" className="navigation">
+          <p>Contact us</p>
+        </a>
       </div>
       <div className="navbar_smallScreen">
         <div className="open_menu">
@@ -56,6 +59,9 @@ function Navbar() {
               </li>
               <li className="navbar_smallLinks_text">
                 <a href="#testimonial">Testimonial</a>
+              </li>
+              <li className="navbar_smallLinks_text">
+                <a href="#contact">Contact us</a>
               </li>
             </ul>
           </div>

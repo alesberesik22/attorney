@@ -1,0 +1,25 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 4rem 6rem;
+}
+.contact_text h2 {
+  font-size: 45px;
+  line-height: 83.2px;
+  font-weight: 500;
+  color: orangered;
+  font-family: "Playfair Display", serif;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  margin-bottom: 5rem;
+  letter-spacing: 0.04em;
+}
+.contact_formular {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
