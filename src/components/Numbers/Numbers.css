@@ -1,0 +1,74 @@
+.numbers {
+  padding: 4rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  background: #094b72;
+}
+.numbers_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.numbers_text_values {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.number_clients,
+.number_projects,
+.number_years {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.break {
+  width: 3px;
+  height: 100px;
+  border-left: 1px solid rgba(220, 220, 220, 0.3);
+}
+.numbers_text h1 {
+  font-size: 50px;
+  line-height: 83.2px;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+.numbers_text h2 {
+  font-size: 22px;
+  line-height: 83.2px;
+  font-weight: 300;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.03em;
+  color: rgba(200, 200, 200, 1);
+}
+.number_clients h3,
+.number_projects h3,
+.number_years h3 {
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+}
+.number_clients h4,
+.number_projects h4,
+.number_years h4 {
+  font-weight: 500;
+  color: rgb(190, 190, 190);
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.03em;
+}

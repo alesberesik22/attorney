@@ -5,8 +5,17 @@ import "./Navbar.css";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [colorChange, setColorChange] = useState(false)
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setColorChange(true)
+    } else {
+      setColorChange(false)
+    }
+  }
+  window.addEventListener('scroll', changeNavbarColor)
   return (
-    <nav className="navbar">
+    <nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
       <div className="name">
         <p className="name_text">Meno Priezvisko</p>
       </div>

@@ -38,7 +38,7 @@ function Contactform() {
             THU <span style={{ marginLeft: "28px" }}>08:00 - 17:00</span>
           </p>
           <p>
-            FRI <span style={{ marginLeft: "33px" }}>08:00 - 17:00</span>
+            FRI <span style={{ marginLeft: "34px" }}>08:00 - 17:00</span>
           </p>
         </div>
         <div className="icons">

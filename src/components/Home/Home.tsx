@@ -3,8 +3,9 @@ import React from "react";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Experience from "../Experience/Experience";
-import Header from "../Header/Header";
+import Header from "../Header/Header2";
 import Navbar from "../Navbar/Navbar";
+import Numbers from "../Numbers/Numbers";
 import Testimonial from "../Testimonial/Testimonial";
 import VideoPage from "../VideoPage/VideoPage";
 
@@ -17,6 +18,7 @@ function Home() {
     >
       <Navbar />
       <Header />
+      <Numbers />
       <Experience />
       <VideoPage />
       <About />
