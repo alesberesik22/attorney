@@ -72,3 +72,15 @@
   font-family: "Playfair Display", serif;
   letter-spacing: 0.04em;
 }
+@media screen and (max-width: 900px) {
+  .number_clients,
+  .number_projects,
+  .number_years {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .number_projects {
+    width: 25%;
+  }
+}

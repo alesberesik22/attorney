@@ -56,7 +56,7 @@
   align-items: flex-start;
   width: 50%;
   font-family: "Playfair Display", serif;
-  color: #1282A6;
+  color: #1282a6;
   letter-spacing: 0.04em;
   font-size: 25px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
@@ -76,4 +76,30 @@
 .about_second_image img {
   margin-right: 7rem;
   width: 70%;
+}
+@media screen and (max-width: 900px) {
+  .about_first,
+  .about_second {
+    flex-direction: column;
+    width: 100%;
+  }
+  .about_first_text,
+  .about_second_text {
+    width: 100%;
+    align-items: center;
+  }
+  .about_first_image,
+  .about_second_image {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .about_first {
+    margin-bottom: 10rem;
+  }
+  .about_second_image {
+    margin-left: 13rem;
+  }
+  .about_second_text {
+    margin-bottom: 4rem;
+  }
 }

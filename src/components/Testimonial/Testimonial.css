@@ -25,3 +25,16 @@
   justify-content: center;
   flex-direction: column;
 }
+@media screen and (max-width: 900px) {
+  .testimonial {
+    margin-top: 10rem;
+  }
+  .testimonial_client {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .testimonial_client {
+    width: 90%;
+  }
+}
