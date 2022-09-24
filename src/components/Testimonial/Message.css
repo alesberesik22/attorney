@@ -1,0 +1,83 @@
+.message {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+
+  background-color: #fff;
+  font-size: 1.25em;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3),
+    0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+}
+.message::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  left: 45%;
+  border: 0.75rem solid transparent;
+  border-top: none;
+  transform: rotate(180deg);
+
+  border-bottom-color: #fff;
+  filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+}
+.testimonial_client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+.message_header {
+  margin-top: 1rem;
+  color: black;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.04em;
+  font-size: 18px;
+  font-weight: 600;
+}
+.message_text {
+  padding: 1.5rem;
+  color: grey;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  font-weight: 300;
+}
+.client_data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 4rem;
+}
+.client_data_img {
+  width: 10%;
+  color: black;
+  margin-right: 1rem;
+}
+.client_data_img img {
+  width: 75%;
+  border-radius: 50%;
+}
+.client_data_text_name {
+  font-family: "Playfair Display", serif;
+  color: #094b72;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  font-size: 20px;
+}
+.client_data_text_position {
+  font-family: "Playfair Display", serif;
+  color: grey;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  font-size: 14px;
+}
