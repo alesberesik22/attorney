@@ -18,10 +18,12 @@ function Header2() {
           </p>
         </div>
         <div className="header_button">
-          <button className="header_button_text">
-            <p>Contact Us</p>
-            <FiChevronRight fontSize={25} style={{ fontWeight: "500" }} />
-          </button>
+          <a href="/home#contact">
+            <button className="header_button_text">
+              <p>Contact Us</p>
+              <FiChevronRight fontSize={25} style={{ fontWeight: "500" }} />
+            </button>
+          </a>
         </div>
         <div className="header_end_text">
           <p>Trusted by 100+ people in Czechia</p>

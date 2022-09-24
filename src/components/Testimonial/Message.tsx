@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Message.css";
 import testimonialData from "./Testimonialdata";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Message(props: any) {
   const [index, setIndex] = useState(0);
