@@ -37,6 +37,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 2rem;
 }
 .card {
@@ -67,4 +68,24 @@
   letter-spacing: 0.03em;
   font-weight: 300;
   font-family: "Playfair Display", serif;
+}
+@media screen and (max-width: 900px) {
+  .experience {
+    width: 100%;
+  }
+  .experiences {
+    width: 100%;
+    padding: 4rem 0 0 0;
+  }
+  .card {
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .experiences {
+    padding: 4rem 0 0 0;
+  }
+  .card {
+    margin-bottom: 4rem;
+  }
 }

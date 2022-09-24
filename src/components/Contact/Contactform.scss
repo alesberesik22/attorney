@@ -230,3 +230,38 @@
     }
   }
 }
+@media screen and (max-width: 900px) {
+  .contact_container {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .contact_container .contact_info .contact_opening {
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .contact_container .icons .icon_text {
+    justify-content: center;
+  }
+  .contact_container .icons {
+    width: 100%;
+  }
+  .contact_container .social_media {
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .contact_container .contact_info {
+    text-align: center;
+  }
+  .form_area {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contact_container {
+    width: 100%;
+  }
+}
