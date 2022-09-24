@@ -59,7 +59,7 @@
 .number_projects h3,
 .number_years h3 {
   font-weight: 700;
-  font-size: 35px;
+  font-size: 30px;
   font-family: "Playfair Display", serif;
   letter-spacing: 0.03em;
   line-height: 60px;
@@ -70,5 +70,5 @@
   font-weight: 500;
   color: rgb(190, 190, 190);
   font-family: "Playfair Display", serif;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 }

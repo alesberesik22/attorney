@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./Contactform.scss";
 import {
   AiOutlinePhone,
@@ -11,11 +11,6 @@ import { BiMap } from "react-icons/bi";
 import { motion } from "framer-motion";
 
 function Contactform() {
-  const form = useRef<HTMLFormElement>(null);
-  const sendEmail = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("successfull");
-  };
   return (
     <motion.div
       whileInView={{ opacity: [0, 1] }}
@@ -75,43 +70,9 @@ function Contactform() {
       <motion.form
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 3 }}
-        className="form_area"
-        ref={form}
-        onSubmit={sendEmail}
       >
         <div className="form">
-          <div className="form_input">
-            <input type="text" name="" required></input>
-            <label>Name</label>
-            <div className="form_input">
-              <input type="text" name="" required></input>
-              <label>Surrname</label>
-            </div>
-          </div>
-          <div className="form_input">
-            <input type="text" name="" required></input>
-            <label>Email</label>
-            <div className="form_input">
-              <input type="text" name="" required></input>
-              <label>Number</label>
-            </div>
-          </div>
-          <div className="form_input_subject">
-            <input type="text" name="" required></input>
-            <label>Subject</label>
-          </div>
-          <div className="form_input">
-            <textarea required></textarea>
-            <label>Message</label>
-          </div>
-          <div className="submit_button">
-            <input
-              type="submit"
-              name=""
-              value="Submit"
-              className="submit_button_press"
-            />
-          </div>
+          <div className="from_group"></div>
         </div>
       </motion.form>
     </motion.div>
