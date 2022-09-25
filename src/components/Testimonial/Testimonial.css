@@ -33,8 +33,19 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1050px) and (max-width: 1200px) {
   .testimonial_client {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .testimonial {
+    padding: 4rem 0 4rem 0;
+  }
+  .testimonial_text h2 {
+    font-size: 40px;
+  }
+  .message {
     width: 90%;
   }
 }

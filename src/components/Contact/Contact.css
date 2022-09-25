@@ -23,3 +23,8 @@
   flex-direction: column;
   width: 100%;
 }
+@media screen and (max-width: 650px) {
+  .contact {
+    padding: 4rem 0 4rem 0;
+  }
+}

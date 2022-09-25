@@ -1,21 +1,26 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import { motion } from "framer-motion";
 import "./Navbar.css";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [colorChange, setColorChange] = useState(false)
+  const [colorChange, setColorChange] = useState(false);
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
-      setColorChange(true)
+      setColorChange(true);
     } else {
-      setColorChange(false)
+      setColorChange(false);
     }
-  }
-  window.addEventListener('scroll', changeNavbarColor)
+  };
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
+  };
+  window.addEventListener("scroll", changeNavbarColor);
   return (
-    <nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
+    <nav className={colorChange ? "navbar colorChange" : "navbar"}>
       <div className="name">
         <p className="name_text">Meno Priezvisko</p>
       </div>
@@ -47,7 +52,13 @@ function Navbar() {
           />
         </div>
         {toggleMenu && (
-          <div className="navbar_smallScreen_links slide_bottom">
+          <motion.div
+            initial={{ opacity: 0, x: "-100%" }}
+            animate={toggleMenu ? "open" : "close"}
+            transition={{ staggerChildren: 0.5 }}
+            variants={variants}
+            className="navbar_smallScreen_links"
+          >
             <AiOutlineClose
               fontSize={27}
               color="#fff"
@@ -56,24 +67,63 @@ function Navbar() {
                 setToggleMenu(false);
               }}
             />
-            <ul className="navbar_smallLinks">
+            <motion.ul
+              animate={{ opacity: [0, 1] }}
+              transition={{ delay: 0.5, duration: 1 }}
+              className="navbar_smallLinks"
+            >
               <li className="navbar_smallLinks_text">
-                <a href="#">Home</a>
+                <a
+                  href="#"
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
+                >
+                  Home
+                </a>
               </li>
               <li className="navbar_smallLinks_text">
-                <a href="#areas">Areas</a>
+                <a
+                  href="#areas"
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
+                >
+                  Areas
+                </a>
               </li>
               <li className="navbar_smallLinks_text">
-                <a href="#about">About</a>
+                <a
+                  href="#about"
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
+                >
+                  About
+                </a>
               </li>
               <li className="navbar_smallLinks_text">
-                <a href="#testimonial">Testimonial</a>
+                <a
+                  href="#testimonial"
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
+                >
+                  Testimonial
+                </a>
               </li>
               <li className="navbar_smallLinks_text">
-                <a href="#contact">Contact us</a>
+                <a
+                  href="#contact"
+                  onClick={() => {
+                    setToggleMenu(false);
+                  }}
+                >
+                  Contact us
+                </a>
               </li>
-            </ul>
-          </div>
+            </motion.ul>
+          </motion.div>
         )}
       </div>
     </nav>
