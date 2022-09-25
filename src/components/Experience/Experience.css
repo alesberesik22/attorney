@@ -81,11 +81,25 @@
     margin-bottom: 4rem;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1050px) and (max-width: 1200px) {
   .experiences {
     padding: 4rem 0 0 0;
   }
   .card {
     margin-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .experience {
+    padding: 4rem 0 4rem 0;
+  }
+  .experience_text {
+    align-items: center;
+  }
+  .experience_text h2 {
+    font-size: 32px;
+  }
+  .experience_text h3 {
+    font-size: 15px;
   }
 }

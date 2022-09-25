@@ -78,9 +78,35 @@
   .number_years {
     width: 100%;
   }
+  .number_projects {
+    width: 150%;
+  }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1050px) and (max-width: 1200px) {
   .number_projects {
     width: 25%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .numbers {
+    padding: 4rem 0 4rem 0;
+  }
+  .numbers_text {
+    margin-bottom: 0;
+  }
+  .numbers_text h1 {
+    font-size: 32px;
+  }
+  .numbers_text h2 {
+    font-size: 15px;
+  }
+  .number_projects {
+    width: 165%;
+  }
+  .number_projects h4 {
+    font-size: 14px;
+  }
+  .number_years h4 {
+    font-size: 13px;
   }
 }

@@ -103,3 +103,41 @@
     margin-bottom: 4rem;
   }
 }
+@media screen and (max-width: 650px) {
+  .about {
+    padding: 4rem 0 4rem 0;
+  }
+  .about_first {
+    margin-bottom: 2rem;
+  }
+  .about_second_image {
+    margin: 0;
+  }
+  .about_second_image,
+  .about_first_image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about_first_text h3,
+  .about_second_text h3 {
+    padding-left: 4rem;
+    width: 100%;
+  }
+  .about_second_text {
+    text-align: left;
+  }
+  .about_second_image img {
+    width: 90%;
+    margin: 0;
+  }
+  .about_first_image img {
+    margin: 0;
+    width: 90%;
+  }
+  .about_first_text h4,
+  .about_second_text h4 {
+    width: 80%;
+  }
+}

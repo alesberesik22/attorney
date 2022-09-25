@@ -1,11 +1,16 @@
 import React from "react";
 import "./Header2.css";
 import justitia from "../assets/images/justitia.png";
+import { motion } from "framer-motion";
 import { FiChevronRight } from "react-icons/fi";
 
 function Header2() {
   return (
-    <div className="header">
+    <motion.div
+      whileInView={{ opacity: [0, 1] }}
+      transition={{ delay: 0.7, duration: 1 }}
+      className="header"
+    >
       <div className="header_info">
         <div className="header_h1">
           <h1>Your Solution</h1>
@@ -38,7 +43,7 @@ function Header2() {
           <p className="attorney">- attorney</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

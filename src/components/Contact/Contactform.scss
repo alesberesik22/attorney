@@ -260,8 +260,20 @@
     margin-bottom: 4rem;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1050px) and (max-width: 1200px) {
   .contact_container {
     width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .contact_container {
+    padding: 0;
+    width: 100%;
+  }
+  .form_area {
+    margin-left: 0;
+  }
+  .form_area .form {
+    width: 90%;
   }
 }
